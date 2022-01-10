@@ -1,0 +1,124 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
+.menu-bar{
+    background-color: rgb(96, 71, 236);
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-menu ul{
+    display: flex;
+}
+
+.right-menu ul li{
+    list-style: none;
+    width: 141px;
+    margin: 15px;
+    padding: 7px;
+    text-align: center;
+    transition: background-color 0.3s linear;
+}
+.right-menu ul li:nth-child(1){
+    list-style: none;
+    width: 85px;
+    margin: 15px;
+    padding: 7px;
+    text-align: center;
+}
+.right-menu ul li:nth-child(42){
+    list-style: none;
+    width: 85px;
+    margin: 15px;
+    padding: 7px;
+    text-align: center;
+}
+.right-menu ul li:nth-child(4){
+    list-style: none;
+    width: 100px;
+    margin: 15px;
+    padding: 7px;
+    text-align: center;
+}
+.right-menu ul li:nth-child(5){
+    list-style: none;
+    width: 100px;
+    margin: 15px;
+    padding: 7px;
+    text-align: center;
+}
+
+
+
+.right-menu ul li:hover{
+    background-color: white;
+    border-radius: 25px;
+
+
+}
+
+.right-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+.right-menu ul li:hover a{
+    color: rgb(0, 0, 0);
+}
+
+.menu-bar > div{
+    margin: 0 30px;
+}
+.sub-menu{
+    display: none;
+
+}
+.right-menu ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: rgb(180, 179, 255);
+    top: 50px;
+    border-radius: 15px;
+    transition: background-color 5s linear;
+}
+
+.right-menu ul li:hover .sub-menu ul{
+    display: block;
+}
+
+.right-menu > ul > li:hover > .sub-menu > ul > li{
+    border-bottom: 1px solid;
+    border-radius: 0;
+    border-color: rgb(0, 0, 0);
+    width: 150px;
+    text-align: left;
+}
+.right-menu > ul > li:hover > .sub-menu > ul > li:nth-child(3){
+    border-bottom: none;
+}
+
+
+.right-menu ul li:hover .sub-menu ul li a{
+    color: rgb(0, 0, 0);
+}
+
+.right-menu ul li:hover .sub-menu ul li:hover{
+    background-color: transparent;
+}
+
+.right-menu ul li:hover .sub-menu ul li:hover a{
+    color: rgb(250, 246, 16);
+
+}
+
+
